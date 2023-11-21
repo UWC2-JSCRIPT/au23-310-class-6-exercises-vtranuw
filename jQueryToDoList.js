@@ -13,6 +13,7 @@ $(document).ready(function () {
     $(this)
       .parent()
       .fadeOut(1700, function () {
+        // For extra credit : When you click delete on an item, make it fade out.
         $(this).remove();
       });
   });
