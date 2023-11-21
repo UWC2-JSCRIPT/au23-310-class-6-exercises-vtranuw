@@ -8,9 +8,13 @@ $(document).ready(function () {
   /**
    * Delete element when delete link clicked
    */
-  $(".today-list").on("click", "a.delete", function (event) {
-    event.stopPropagation(); // Prevents the li click event from firing
-    $(this).parent().remove();
+  $(".today-list").on("click", "a.delete", function (e) {
+    e.stopPropagation();
+    $(this)
+      .parent()
+      .fadeOut(1700, function () {
+        $(this).remove();
+      });
   });
   /**
    * Adds new list item to <ul>
