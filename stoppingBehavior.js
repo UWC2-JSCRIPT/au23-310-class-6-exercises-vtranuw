@@ -13,6 +13,6 @@ document.getElementById("more-info").addEventListener("click", (event) => {
 // When the bark button is clicked, should alert "Bow wow!"
 // Should *not* alert "meow"
 document.getElementById("dog").addEventListener("click", (event) => {
-  event.stopPropagation(); // Prevents the click event from bubbling up to the container
+  event.stopPropagation();
   alert("Bow wow!");
 });
